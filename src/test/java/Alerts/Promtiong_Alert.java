@@ -21,7 +21,7 @@ public static void main(String[] args) {
     //Switch to alert
     Alert  myalert= driver.switchTo().alert();
    // myalert.accept();
-    myalert.dismiss();
+     myalert.dismiss();
     
     String Accept_msg =driver.findElement(By.id("demo")).getText();
     System.out.println(Accept_msg);
