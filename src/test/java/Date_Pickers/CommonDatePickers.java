@@ -35,7 +35,7 @@ public class CommonDatePickers {
 		
 	}
 		
-public void SelectPastDate(WebDriver driver, String year, String month, String day) {
+public static void SelectPastDate(WebDriver driver, String year, String month, String day) {
 		
 			while(true)
 			{
@@ -70,8 +70,8 @@ public static void main(String[]args) {
 	String year="2027";
 	String month="June";
 	String date="5";
-	//SelectFutureDate(driver,"2027","June","5");
-	SelectFutureDate(driver, year, month, date);
+	SelectPastDate(driver,"2020","June","5");
+	//SelectFutureDate(driver, year, month, date);
 	
 	
 	
