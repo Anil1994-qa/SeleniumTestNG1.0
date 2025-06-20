@@ -20,7 +20,7 @@ public class Listener implements ITestListener{
 		Reporter.log("Test Case is Passed");
 		TakesScreenshot ts=(TakesScreenshot)driver;
 		File source_file=ts.getScreenshotAs(OutputType.FILE);
-		File target_file=new File(System.getProperty("user.dir")+"//screenshots//TestPass"+Math.random()+"png");
+		File target_file=new File(System.getProperty("user.dir")+"/screenshots/TestPass"+Math.random()+".png");
 		//source_file.renameTo(target_file);
 		try 
 		{
@@ -29,7 +29,7 @@ public class Listener implements ITestListener{
 		{
 			e.printStackTrace();
 		}
-		
+		System.out.println("Listener: onTestSuccess triggered");
 	}
 
 	@Override
@@ -39,7 +39,7 @@ public class Listener implements ITestListener{
 		Reporter.log("Test Case is Failed");
 		TakesScreenshot ts=(TakesScreenshot)driver;
 		File source_file=ts.getScreenshotAs(OutputType.FILE);
-		File target_file=new File(System.getProperty("user.dir")+"//screenshots//TestFail"+Math.random()+"png");
+		File target_file=new File(System.getProperty("user.dir")+"/screenshots/TestFail"+Math.random()+".png");
 		//source_file.renameTo(target_file);
 		try 
 		{
@@ -48,6 +48,8 @@ public class Listener implements ITestListener{
 		{
 			e.printStackTrace();
 		}
+		System.out.println("Listener: onTestFailure triggered");
 	}
-
+	
+      
 }
