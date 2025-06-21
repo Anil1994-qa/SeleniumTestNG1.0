@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="GridSuite">
+  <test name="Remote or Local Execution Test">
+    <parameter name="os" value="windows"/>  <!-- or "mac" -->
+    <parameter name="br" value="chrome"/>   <!-- or "firefox", "edge" -->
+    <classes>
+      <class name="Grid.Standalone"/>
+    </classes>
+  </test>
+</suite>
