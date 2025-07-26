@@ -20,7 +20,7 @@ public static void main(String[] args) throws IOException {
     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     
     List<WebElement> links=driver.findElements(By.tagName("a"));
-    System.out.println("Total number of links in the web Page"+links.size());
+    System.out.println("Total numb er of links in the web Page"+links.size());
     
     for(WebElement all_links:links)
     	
