@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DataProvider.DataProviderDemo">
+      <class name="MyListeners.OpencartLogin">
         <methods>
-          <include name="Setup"/>
-          <include name="testLogin" invocation-numbers="0 2 3"/>
-          <include name="tearDown"/>
+          <include name="verifylogin"/>
         </methods>
-      </class> <!-- DataProvider.DataProviderDemo -->
+      </class> <!-- MyListeners.OpencartLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

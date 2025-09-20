@@ -13,8 +13,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.DataProvider;
 public class DataProviderDemo {
-WebDriver driver;
-Actions act;
+static WebDriver driver;
+static Actions act;
 @BeforeClass
 void Setup()
 {
